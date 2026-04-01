@@ -24,6 +24,18 @@ model.save(quant_path)
 
 ```
 
+| Model      | Method           | Bits | Hyperparameters      | Wikitext PPL |
+| ---------- | ---------------- | ---- | -------------------- | ------------ |
+| Qwen3-0.6B | GPTQ             | 4    | —                    | 30.0372      |
+|            | GPTAQ            | 4    | alpha=0.25           | 30.5776      |
+|            | FOEM (w/o GPTAQ) | 4    | alpha=0, beta=0.2    | 29.6199      |
+|            | FOEM (w/ GPTAQ)  | 4    | alpha=0.25, beta=0.2 | 29.3823      |
+| Qwen3-8B   | GPTQ             | 4    | —                    | 12.5488      |
+|            | GPTAQ            | 4    | alpha=0.25           | 12.7152      |
+|            | FOEM (w/o GPTAQ) | 4    | alpha=0, beta=0.2    | 12.5128      |
+|            | FOEM (w/ GPTAQ)  | 4    | alpha=0.25, beta=0.2 | 12.6172      |
+
+
 
 ------
 
