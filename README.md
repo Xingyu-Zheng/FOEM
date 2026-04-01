@@ -4,6 +4,27 @@ This is the implementation repository for FOEM [AAAI 2026](https://ojs.aaai.org/
 
 This repository has not been updated for some time because we have completed the integration with [GPTQModel](https://github.com/ModelCloud/GPTQModel). The implementation is now fully usable and is currently being merged into the main branch. See: https://github.com/ModelCloud/GPTQModel/issues/1678 and https://github.com/ModelCloud/GPTQModel/pull/2639.
 
+```python
+from datasets import load_dataset, load_from_disk
+from gptqmodel import GPTQModel, QuantizeConfig, FOEMConfig
+
+size = "8B"
+model_id = f"models/Qwen3/Qwen3-{size}"
+quant_path = f"models/gptqmodel/Qwen3-{size}-foem-4bit"
+
+calibration_dataset = load_from_disk("datasets/allenai/c4/allenai--c4/train").select(range(256))["text"]
+
+quant_config = QuantizeConfig(bits=4, group_size=128, foem=FOEMConfig(alpha=0, beta=0.2, device="auto"))
+
+model = GPTQModel.load(model_id, quant_config)
+
+model.quantize(calibration_dataset, batch_size=4)
+
+model.save(quant_path)
+
+```
+
+
 ------
 
 ### Citation
