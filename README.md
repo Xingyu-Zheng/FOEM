@@ -2,7 +2,7 @@
 
 This is the implementation repository for FOEM [AAAI 2026](https://ojs.aaai.org/index.php/AAAI/article/view/40123).
 
-This repository has not been updated for some time because we have completed the integration with [GPTQModel](https://github.com/ModelCloud/GPTQModel). The implementation is now fully usable and is currently being merged into the main branch. See: https://github.com/ModelCloud/GPTQModel/issues/1678 and https://github.com/ModelCloud/GPTQModel/pull/2639.
+This repository has not been updated for some time because we have completed the integration with [GPTQModel](https://github.com/Xingyu-Zheng/GPTQModel). The implementation is now fully usable and is currently being merged into the main branch. See: https://github.com/ModelCloud/GPTQModel/issues/1678 and https://github.com/ModelCloud/GPTQModel/pull/2639.
 
 ```python
 from datasets import load_dataset, load_from_disk
