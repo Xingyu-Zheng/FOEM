@@ -2,7 +2,7 @@
 
 FOEM has been accepted at [AAAI 2026](https://ojs.aaai.org/index.php/AAAI/article/view/40123).
 
-We have completed the integration with [GPTQModel](https://github.com/Xingyu-Zheng/GPTQModel). 
+We have completed the integration with [GPTQModel](https://github.com/ModelCloud/GPTQModel). 
 
 Parts of this repository are now outdated, but we keep it available for developers who wish to debug or experiment with the algorithm.
 
