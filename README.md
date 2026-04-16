@@ -1,5 +1,13 @@
 # First-Order Error Matters: Accurate Compensation for Quantized Large Language Models.
 
+<div align="center">
+  <a href=https://ojs.aaai.org/index.php/AAAI/article/view/40123 target="_blank"><img src=https://img.shields.io/badge/Official%20Site-333399.svg?logo=homepage height=22px></a>
+  <a href=https://huggingface.co/collections/Xingyu-Zheng/foem-quantization target="_blank"><img src=https://img.shields.io/badge/%F0%9F%A4%97%20Models-d96902.svg height=22px></a>
+  <a href=https://github.com/Xingyu-Zheng/FOEM target="_blank"><img src= https://img.shields.io/badge/Page-bb8a2e.svg?logo=github height=22px></a>
+  <a href=https://arxiv.org/abs/2507.11017 target="_blank"><img src=https://img.shields.io/badge/Report-b5212f.svg?logo=arxiv height=22px></a>
+  <a href=https://modelscope.cn/models/XingyuZheng target="_blank"><img src=https://img.shields.io/badge/ModelScope-Models-624aff.svg height=22px></a>
+</div>
+
 FOEM has been accepted at [AAAI 2026](https://ojs.aaai.org/index.php/AAAI/article/view/40123).
 
 We have completed the integration with [GPTQModel](https://github.com/ModelCloud/GPTQModel). 
